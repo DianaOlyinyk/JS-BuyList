@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Список покупок</title>
+  <link rel="stylesheet" href="BuyList.css" />
+</head>
+<body>
+  <script src="BuyList.js" defer></script>
+  <div class="container">
+    <div class="main-list">
+      <div class="add-item">
+        <input type="text" id="product-input" placeholder="Назва товару" />
+        <button class="add-btn" data-tooltip="Додати товар до кошика">Додати</button>
+      </div>
+
+      <div class="item">
+        <span class="item-name bought">Помідори</span>
+        <span class="item-count">2</span>
+        <button class="toggle-btn bought-btn">Не куплено</button>
+      </div>
+      <div class="item-list">
+        <div class="item">
+          <span class="item-name">Печиво</span>
+          <div class="controls">
+            <button class="minus" data-tooltip="Зменшити кількість">−</button>
+            <span class="item-count">2</span>
+            <button class="plus" data-tooltip="Збільшити кількість">+</button>
+          </div>
+          <button class="toggle-btn">Куплено</button>
+          <button class="remove-btn" data-tooltip="Видалити товар">×</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="summary">
+    <h2>Залишилося купити:</h2>
+    <ul id="left-list" class="stats-list"></ul>
+
+    <h2>Куплено:</h2>
+    <ul id="bought-list" class="stats-list"></ul>
+    </div>
+  </div>
+  <div class="name-badge">
+  <span></span> 
+  </div>
+</body>
+</html>
